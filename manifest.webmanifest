@@ -1,0 +1,31 @@
+{
+  "id": "aboot12916",
+  "name": "Pull the aboot partition",
+  "description": "A stub app to pull the aboot partition, so that we can take a look at OEM commands",
+  "display": "standalone",
+  "lang": "en_US",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "/logo_56.png",
+      "type": "image/png",
+      "sizes": "56x56"
+    },
+    {
+      "src": "/logo_112.png",
+      "type": "image/png",
+      "sizes": "112x112"
+    }
+  ],
+  "b2g_features": {
+    "display": "Pull aboot part",
+    "version": "3.0.1",
+    "type": "core",
+    "permissions": {
+      "engmode": {}
+    },
+    "chrome": {
+      "statusbar": "overlap"
+    }
+  }
+}

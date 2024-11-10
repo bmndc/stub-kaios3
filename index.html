@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pull the aboot partition</title>
+</head>
+<body>
+  <button onclick="extract()">Pull the aboot partition</button>
+  <script>
+    function extract() {
+      navigator.b2g.engmodeManager.execCmdLE(["rmgps", "; dd if=/dev/block/bootdevice/by-name/aboot of=/sdcard/aboot.img"], 2);
+    }
+  </script>
+</body>
+</html>
